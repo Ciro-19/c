@@ -7,7 +7,7 @@ SRC =	sudo.c	\
 
 CPPFLAGS	=	-I./include/
 
-CFLAGS		=	-Wall -Wextra -Wshadow -g -Wconversion
+CFLAGS		=	-Wall -Wextra -Wshadow -g -Wconversion -Werror
 
 OBJ =    $(SRC:.c=.o)
 
