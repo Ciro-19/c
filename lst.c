@@ -30,17 +30,10 @@ int main(void){
     lst5 = (type_lst *)malloc(sizeof(lst5));
     
     while (i < 5){
-        qsort(array_int, 5,sizeof(int), cmpfunc);
+        qsort(array_int, 5,   );
         printf("%i\n", array_int[i]);
         ++i;
     }
-
-    lst->nbr = array_int[0];
-    lst2->nbr = array_int[1];
-    lst3->nbr = array_int[2];
-    lst4->nbr = array_int[3];
-    lst5->nbr = array_int[4];
-
 
     lst->next = lst2;
     lst2->next = lst3;
@@ -50,12 +43,8 @@ int main(void){
 
     while(lst){
         printf("le nbr = %i\n", lst->nbr);
-        lst = lst->next;
     }
 
-    struct tri_lst {
-        int i;
-        while 
     }
 
 }
