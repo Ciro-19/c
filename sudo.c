@@ -15,12 +15,10 @@ int sudo_map(char *filepath) {
     if (size == -1)
         return 84;
 
-    // allouer la mémoire du tableau -> 9 lignes (9 int *)
     map = malloc(9 * sizeof(int *));
     if (map == NULL)
         return 84;
 
-    // loop9 allouer la mémoire des int* -> (9 int)
     while (x < 9) {
         map[x] = malloc(9 * sizeof(int));
         if (map[x] == NULL)
